@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import {
   Row,
   Col,
@@ -77,7 +77,7 @@ class Count extends Component {
     }
 
     return (
-      <React.Fragment>
+      <Fragment>
         <FormGroup>
           <ControlLabel>How many numbers will you count?</ControlLabel>
           <Row>
@@ -114,7 +114,7 @@ class Count extends Component {
           closeModal={this.handleCloseModal}
           confirmRestart={this.handleRestart}
         />
-      </React.Fragment>
+      </Fragment>
     );
   }
 }

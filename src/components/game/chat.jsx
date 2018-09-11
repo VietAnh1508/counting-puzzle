@@ -34,7 +34,7 @@ class Chat extends Component {
     };
   };
 
-  async componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps(nextProps) {
     const { userCount, isEndGame, isRestart } = nextProps;
     let currentCount = this.renderUserMessages(userCount);
     let messages = this.renderBotMessages(userCount, currentCount);
